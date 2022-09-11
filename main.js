@@ -4,11 +4,10 @@ const button = document.querySelector('.btn')
 
 const getUserInput = () =>{
     let userChoice = prompt("How many rows?")
-    if(userChoice < 100){
-        return userChoice;
-    }else{
-        alert("1-100")
+    while(userChoice > 100){
+        userChoice = prompt("1-100")
     }
+    return userChoice
 }
 
 const randomColor = () =>{

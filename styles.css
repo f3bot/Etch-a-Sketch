@@ -4,6 +4,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: lightgray;
+}
+
 .logo{
     font-size: 48px;
 }
@@ -17,26 +21,79 @@
 .buttonbar{
     display: flex;
     justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.colorbar{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
     margin-top: 20px;
 }
 
 .container{
     display: flex;
     justify-content: center;
-    border: 1px solid green;
     margin-top: 40px;
-
 }
 
 .grid-box{
     border: 1px solid black;
+    background-color: white;
 }
 
 .btn{
-    background-color: blue;
+    background-color: beige;
+    color: black;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+#button{
     color: white;
     height: 40px;
     width: 80px;
     border-radius: 10px;
     font-size: 22px;
+}
+
+.black{
+    background-color: black;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.random{
+    color: #fff;
+    background: -webkit-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: -o-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: -moz-linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+    background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%);
+}
+
+.footer{
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 1920px;
+}
+
+.copyright{
+    color: white;
+    font-size: 24px;
 }

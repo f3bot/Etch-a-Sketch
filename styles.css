@@ -4,17 +4,27 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.logo{
+    font-size: 48px;
+}
+
 .navbar{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
+}
+
+.buttonbar{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .container{
     display: flex;
     justify-content: center;
     border: 1px solid green;
-    width: auto;
-    height: auto;
+    margin-top: 40px;
 
 }
 
@@ -22,6 +32,11 @@
     border: 1px solid black;
 }
 
-.grid-box:hover{
-    background-color: black;
+.btn{
+    background-color: blue;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    font-size: 22px;
 }

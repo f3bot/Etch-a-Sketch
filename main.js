@@ -1,9 +1,18 @@
 const container = document.querySelector('.container')
 const button = document.querySelector('.btn')
 
+
 const getUserInput = () =>{
-    let userChoice = Math.floor(prompt("How many rows?"))
-    return userChoice
+    let userChoice = prompt("How many rows?")
+    if(userChoice < 100){
+        return userChoice;
+    }else{
+        alert("1-100")
+    }
+}
+
+const randomColor = () =>{
+
 }
 
 const createGrid = (amount) =>{
@@ -12,14 +21,29 @@ const createGrid = (amount) =>{
         row.classList.add('grid-row')
 
         for (let j = 0; j < amount; j++){
-            const size = 960/amount
+            const size = 400/amount
             const gridBox = document.createElement('div')
             gridBox.classList.add('grid-box')
+            gridBox.setAttribute("id", "grid-box")
             gridBox.style.height = `${size}px`
             gridBox.style.width = `${size}px`
+            gridBox.addEventListener('mouseover' , () =>{
+                gridBox.style.backgroundColor = 'black'
+            })
             row.appendChild(gridBox)
         }
         container.appendChild(row)
     }
 }
 
+createGrid(16)
+
+
+button.addEventListener('click', () =>{
+    container.innerHTML = ''
+    createGrid(getUserInput())
+})
+
+//add clear button, but first 16x16 grid should still be created
+
+//make the container centered, and make the boxes fit inside the container

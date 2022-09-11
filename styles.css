@@ -38,6 +38,11 @@ body{
     margin-top: 40px;
 }
 
+.colorbar{
+    display: flex;
+    gap: 20px;
+}
+
 .grid-box{
     border: 1px solid black;
     background-color: white;

@@ -10,6 +10,7 @@ body{
 
 .logo{
     font-size: 48px;
+    text-align: center;
 }
 
 .navbar{
@@ -60,7 +61,7 @@ body{
 #button{
     color: white;
     height: 40px;
-    width: 80px;
+    width: 100px;
     border-radius: 10px;
     font-size: 22px;
 }
@@ -91,11 +92,12 @@ body{
 
 .footer{
     background-color: #1f2937;
-    display: flex;
-    justify-content: center;
-    position: absolute;
+    text-align: center;
+    position: fixed;
+    left: 0;
     bottom: 0;
-    width: 1868px;
+    width: 100%;
+    max-height: 10%;
 }
 
 .copyright{

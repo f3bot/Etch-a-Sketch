@@ -6,6 +6,7 @@ const green = document.querySelector('.green')
 const black = document.querySelector('.black')
 const random = document.querySelector('.random')
 const clear = document.querySelector('#clear')
+const eraser = document.querySelector('#eraser')
 
 const getUserInput = () =>{
     let userChoice = prompt("How many rows?")
@@ -46,6 +47,9 @@ const createGrid = (amount) =>{
             })
             clear.addEventListener('click', () =>{
                 gridBox.style.backgroundColor = 'white'
+            })
+            eraser.addEventListener('click', () =>{
+                choice = 'white'
             })
             const gridBox = document.createElement('div')
             gridBox.classList.add('grid-box')

@@ -35,8 +35,8 @@ body{
 }
 
 .grid{
-    border: 30px solid rgb(105, 41, 207);
-    border-radius: 50px;
+    border: 20px solid rgb(105, 41, 207);
+    border-radius: 40px;
     width: fit-content 30%;
     height: auto;
 }

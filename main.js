@@ -7,10 +7,13 @@ const black = document.querySelector('.black')
 const random = document.querySelector('.random')
 const clear = document.querySelector('#clear')
 const eraser = document.querySelector('#eraser')
+const color = document.querySelector('.color')
+let choice = 'black'
+
 
 const getUserInput = () =>{
     let userChoice = prompt("How many rows?")
-    while(userChoice > 100){
+    while(userChoice > 100 || userChoice == null){
         userChoice = prompt("1-100")
     }
     return userChoice
@@ -28,29 +31,10 @@ const createGrid = (amount) =>{
         row.classList.add('grid-row')
 
         for (let j = 0; j < amount; j++){
-            const size = 400/amount
-            let choice = 'black'
-            red.addEventListener('click' , () =>{   
-                choice = 'red'
-            })
-            blue.addEventListener('click' , () =>{
-                choice = 'blue'
-            })
-            green.addEventListener('click' , () =>{
-                choice = 'green'
-            })
-            black.addEventListener('click', () =>{
-                choice = 'black'
-            })
-            random.addEventListener('click' , () =>{
-                choice = randomColor()
-            })
             clear.addEventListener('click', () =>{
                 gridBox.style.backgroundColor = 'white'
             })
-            eraser.addEventListener('click', () =>{
-                choice = 'white'
-            })
+            const size = 400/amount
             const gridBox = document.createElement('div')
             gridBox.classList.add('grid-box')
             gridBox.setAttribute("id", "grid-box")
@@ -71,4 +55,15 @@ createGrid(16)
 button.addEventListener('click', () =>{
     container.innerHTML = ''
     createGrid(getUserInput())
+})
+
+random.addEventListener('click' , () =>{
+    choice = randomColor()
+})
+eraser.addEventListener('click', () =>{
+    choice = 'white'
+})
+
+color.addEventListener('input', (e) =>{
+    choice = (e.target.value)
 })

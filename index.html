@@ -3,7 +3,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,25 +11,25 @@
     <title>Etch-a-Sketch</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">Etch-a-Sketch</div>
-    </div>
-    <div class="buttonbar">
-        <button class="btn">Size</button>
-        <button class="btn" id="clear">Clear</button>
-        <button class="btn" id="eraser">Eraser</button>
-    </div>
-    <div class="container" id="container">
-    </div>
-    <div class="colorbar">
-        <button class="black" id="button">Black</button>
-        <button class="red" id="button">Red</button>
-        <button class="blue" id="button">Blue</button>
-        <button class="green" id="button">Green</button>
-        <button class="random" id="button">Random</button>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">Etch-a-Sketch</div>
+        </div>
+        <div class="con2">
+            <div class="grid">
+                <div class="container" id="container"></div>
+            </div>
+            <div class="buttonbar">
+                <input name="clr" type="color" class="color">
+                <button class="btn">Size</button>
+                <button class="btn" id="clear">Clear</button>
+                <button class="btn" id="eraser">Eraser</button>
+                <button class="random" id="button">Random</button>
+            </div>
+        </div>   
     </div>
     <div class="footer">
-        <div class="copyright">Copyright © Auuuuuuuuugh software house</div>
+        <div class="copyright">Copyright © Auuuuuuugh Software House</div>
     </div>
     <script src="main.js"></script>
 </body>

@@ -10,7 +10,6 @@ const eraser = document.querySelector('#eraser')
 const color = document.querySelector('.color')
 let choice = 'black'
 
-
 const getUserInput = () =>{
     let userChoice = prompt("How many rows?")
     while(userChoice > 100 || userChoice == null){

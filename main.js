@@ -12,7 +12,7 @@ let choice = 'black'
 
 const getUserInput = () =>{
     let userChoice = prompt("How many rows?")
-    while(userChoice > 100 || userChoice == null || typeof userChoice !== 'number'){
+    while(userChoice > 100 || userChoice == null){
         userChoice = prompt("1-100")
     }
     return userChoice
